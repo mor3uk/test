@@ -1,1 +1,12 @@
-@import 'base/normalize';
+@import './base/normalize';
+@import './base/base';
+@import './media';
+
+* {
+    box-sizing: border-box;
+}
+
+.section {
+    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 590px);
+}
