@@ -1,7 +1,6 @@
-@import './base/normalize';
-@import './base/variables';
-@import './base/base';
-
+@import "./base/normalize";
+@import "./base/variables";
+@import "./base/base";
 
 * {
     font-family: Roboto;
@@ -9,7 +8,7 @@
 }
 
 body {
-    background-color: #F2F3F7;
+    background-color: #f2f3f7;
 }
 
 .section {
@@ -24,21 +23,32 @@ body {
     background-color: #fff;
 }
 
+.wrapper {
+    display: flex;
+    .content {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+}
+
 // libs
-@import './libs/jquery.minical';
+@import "./libs/jquery.minical";
+@import "./libs/animate";
 
 // element blocks
-@import './blocks/subtitle';
-@import './blocks/input-container';
-@import './blocks/input';
-@import './blocks/question-mark';
-@import './blocks/checkbox';
-@import './blocks/radio';
-@import './blocks/btn';
+@import "./blocks/subtitle";
+@import "./blocks/input-container";
+@import "./blocks/input";
+@import "./blocks/question-mark";
+@import "./blocks/checkbox";
+@import "./blocks/radio";
+@import "./blocks/btn";
 
 // page blocks
-@import './page-blocks/nav';
-@import './page-blocks/header';
-@import './page-blocks/body';
+@import "./page-blocks/nav";
+@import "./page-blocks/header";
+@import "./page-blocks/body";
 
-@import './media';
+@import "./media";
