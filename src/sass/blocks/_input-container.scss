@@ -6,13 +6,18 @@
         margin-top: 0;
     }
     .input-wrapper {
+        transition-duration: .3s;
         position: relative;
         flex-grow: 1;
+        max-width: 100%;
         &-2 {
             max-width: 49%;
         }
         &-3 {
             max-width: 32%;
+        }
+        &-0 {
+            max-width: 0;
         }
         label {
             margin-bottom: 8px;

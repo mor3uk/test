@@ -70,7 +70,7 @@ const validateObj = {
         ['migration-card-series']: generateRuleForDigits(9),
         ['visa-number']: generateRuleForDigits(9),
         ['visa-series']: generateRuleForDigits(9),
-        ['date-issue']: { required },
+        ['date-issue']: { required: true },
         ['date-entry']: { required },
         ['birthday']: { required },
         ['pasport-entry']: { required },

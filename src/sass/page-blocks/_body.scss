@@ -24,6 +24,9 @@
         font-weight: 400;
         font-size: 16px;
         color: $main-dark;
+        &[for="nationality-country"] {
+            position: relative;
+        }
     }
     .legal-adress {
         .checkbox {
@@ -34,10 +37,13 @@
         .checkbox {
             margin: 16px 0 21px;
         }
+        &__body {
+            display: none;
+        }
     }
     .cover {
         width: 34px;
-        top: 54%;
+        top: 40px;
         right: 2px;
         position: absolute;
         pointer-events: none;
@@ -51,5 +57,12 @@
         font-weight: 500;
         font-size: 12px;
         color: #e30611;
+    }
+    select {
+        option {
+            height: 20px;
+            box-sizing: content-box;
+            font-size: 16px;
+        }
     }
 }

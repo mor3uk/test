@@ -1,5 +1,6 @@
 .input {
     width: 100%;
+    transition-duration: .3s;
     padding: 14px 20px;
     height: 52px;
     color: $main-dark;
@@ -12,5 +13,10 @@
     &_date {
         padding-left: 50px;
         background: url("../icons/calendar.svg") 17px 46% no-repeat;
+    }
+    &:disabled {
+        color: $main-dark;
+        border-color: #F2F3F7;
+        background-color: #F2F3F7;
     }
 }
