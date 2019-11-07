@@ -1,0 +1,15 @@
+.btn {
+    width: 123px;
+    transition-duration: .4s;
+    padding-right: 50px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background: url('../icons/arrow_white.svg') 97px center no-repeat;
+    background-color: $main-red;
+    &:hover {
+        background-color: $main-dark;
+    }
+}

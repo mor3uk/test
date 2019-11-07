@@ -1,0 +1,16 @@
+.input {
+    width: 100%;
+    padding: 14px 20px;
+    height: 52px;
+    color: $main-dark;
+    border: 2px solid #bbc1c7;
+    border-radius: 4px;
+    background-color: #fff;
+    &::placeholder {
+        color: $main-gray;
+    }
+    &_date {
+        padding-left: 50px;
+        background: url("../icons/calendar.svg") 17px center no-repeat;
+    }
+}

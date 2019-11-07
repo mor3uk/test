@@ -1,12 +1,41 @@
 @import './base/normalize';
+@import './base/variables';
 @import './base/base';
-@import './media';
+
 
 * {
+    font-family: Roboto;
     box-sizing: border-box;
 }
 
-.section {
-    padding-left: calc(50% - 590px);
-    padding-right: calc(50% - 590px);
+body {
+    background-color: #F2F3F7;
 }
+
+.section {
+    padding-right: calc(50% - 590px);
+    padding-left: calc(50% - 590px);
+}
+
+.global-wrapper {
+    padding-top: 73px;
+    padding-bottom: 96px;
+    margin-bottom: 64px;
+    background-color: #fff;
+}
+
+// element blocks
+@import './blocks/subtitle';
+@import './blocks/input-container';
+@import './blocks/input';
+@import './blocks/question-mark';
+@import './blocks/checkbox';
+@import './blocks/radio';
+@import './blocks/btn';
+
+// page blocks
+@import './page-blocks/nav';
+@import './page-blocks/header';
+@import './page-blocks/body';
+
+@import './media';

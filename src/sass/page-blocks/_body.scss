@@ -1,0 +1,49 @@
+.body {
+    padding: 0 13% 119px;
+    border: 1px solid $header-color;
+    &-form {
+        &__item {
+            margin-top: 40px;
+        }
+        &__info {
+            margin-bottom: 32px;
+            line-height: 24px;
+            color: $main-gray;
+        }
+        &__subtitle {
+            margin-bottom: 12px;
+            .question-mark {
+                margin-left: 8px;
+            }
+        }
+        &__btn {
+            margin-top: 40px;
+        }
+    }
+    label {
+        font-weight: 400;
+        font-size: 16px;
+        color: $main-dark;
+    }
+    .legal-adress {
+        .checkbox {
+            margin-top: 23px;
+        }
+    }
+    .license {
+        .checkbox {
+            margin: 16px 0 21px;
+        }
+    }
+    .cover {
+        width: 34px;
+        top: 54%;
+        right: 2px;
+        position: absolute;
+        pointer-events: none;
+        height: 20px;
+        display: block;
+        background: url("../icons/arrow_down.svg") left center no-repeat;
+        background-color: #fff;
+    }
+}

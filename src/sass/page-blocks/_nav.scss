@@ -1,0 +1,19 @@
+.nav {
+    &__link {
+        transition-duration: .3s;
+        font-weight: 700;
+        font-size: 12px;
+        color: $main-gray;
+        &_active {
+            color: $main-dark;
+        }
+        &:hover {
+            color: $main-dark;            
+        }
+    }
+    &__separator {
+        margin: 0 16px 0 6px;
+        width: 5px;
+        height: 9px;
+    }
+}

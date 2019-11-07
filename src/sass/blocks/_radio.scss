@@ -1,0 +1,47 @@
+.radio {
+    &_m11 {
+        margin-top: 11px;
+    }
+    &_m21 {
+        margin-bottom: 21px;
+    }
+    &__btns {
+        display: flex;
+    }
+    &__btn {
+        &:first-child {
+            margin-right: 164px;
+        }
+        input {
+            display: none;
+            &:checked ~ label > .radio__circle {
+                border: 10px solid $main-red;
+            }
+        }
+    }
+    &__circle {
+        width: 28px;
+        transition-duration: 0.4s;
+        height: 28px;
+        display: inline-block;
+        cursor: pointer;
+        border: 2px solid #bbc1c7;
+        border-radius: 100%;
+        margin-right: 12px;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        &:first-child {
+            font-weight: 700;
+            font-size: 14px;
+            margin: 16px 0 11px;
+            display: inline-block;
+        }
+        span {
+            &:nth-child(2) {
+                padding-top: 5px;
+            }
+        }
+    }
+}

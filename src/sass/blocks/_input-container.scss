@@ -1,0 +1,28 @@
+.input-container {
+    margin-top: 16px;
+    justify-content: stretch;
+    display: flex;
+    &:first-child {
+        margin-top: 0;
+    }
+    .input-wrapper {
+        position: relative;
+        flex-grow: 1;
+        &:nth-child(2),
+        &:nth-child(3) {
+            margin-left: 16px;
+        }
+        label {
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 14px;
+            display: block;
+            .question-mark {
+                margin-left: 4px;
+            }
+            &.m11 {
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
