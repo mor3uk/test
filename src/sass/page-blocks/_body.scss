@@ -13,7 +13,11 @@
         &__subtitle {
             margin-bottom: 12px;
             .question-mark {
-                margin-left: 8px;
+                margin: -4px 0 0 8px;
+                vertical-align: middle;
+                &_titled {
+                    line-height: 13px;
+                }
             }
         }
         &__btn {
