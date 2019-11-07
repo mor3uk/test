@@ -24,6 +24,9 @@ body {
     background-color: #fff;
 }
 
+// libs
+@import './libs/jquery.minical';
+
 // element blocks
 @import './blocks/subtitle';
 @import './blocks/input-container';

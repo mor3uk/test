@@ -37,7 +37,6 @@
 }
 .label-cbx .checkbox-animated svg path {
     fill: none;
-    // stroke: $main-red;
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -62,8 +61,8 @@
 
 .cntr {
     position: relative;
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
 }
 
 .invisible {

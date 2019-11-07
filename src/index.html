@@ -37,11 +37,11 @@
                                 автоматически заполнены. Проверьте, пожалуйста, корректность указанных данных.
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="inn">ИНН</label>
                                     <input id="inn" name="inn" class="input" type="number" placeholder="00000000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="ogrn">ОГРН/ОГРНИП</label>
                                     <input id="ogrn" name="ogrn" class="input" type="number" placeholder="00000000000">
                                 </div>
@@ -60,18 +60,18 @@
                                 который банк будет зачислять денежные средства в рамках торгового эквайринга.
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="bank-name">Наименование банка</label>
                                     <input id="bank-name" name="bank-name" class="input" type="text"
                                         placeholder="Укажите название банка">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="bic">БИК банка</label>
                                     <input id="bic" name="bic" class="input" type="number" placeholder="000000000">
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="payment">Расчетный счет
                                         <a class="question-mark"
                                             title="Расчётный счёт — учётная запись, используемая банком или иным расчётным учреждением для учёта денежных операций клиентов. Текущее состояние расчётного счёта, как правило, соответствует сумме денежных средств, принадлежащих клиенту.">
@@ -81,7 +81,7 @@
                                     <input id="payment" name="payment" class="input" type="number"
                                         placeholder="45400000000000000001">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="correspondent">Корреспондентский счет</label>
                                     <input id="correspondent" name="correspondent" class="input" type="number"
                                         placeholder="45400000000000000001">
@@ -145,25 +145,27 @@
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="license-num">Номер лицензии</label>
                                     <input id="license-num" name="license-num" type="number" class="input"
                                         placeholder="0000000000000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="license-given-by">Кем выдана</label>
                                     <input id="license-given-by" name="license-given-by" type="text" class="input"
                                         placeholder="Организация, выдавшая лицензию">
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="date-issue">Дата выдачи</label>
-                                    <input id="date-issue" name="date-issue" type="date" class="input input_date">
+                                    <input id="date-issue" name="date-issue" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="validity">Срок действия</label>
-                                    <input id="validity" name="validity" type="date" class="input input_date">
+                                    <input id="validity" name="validity" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                             <div class="cntr checkbox">
@@ -197,14 +199,15 @@
                                 </a>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="certificate-num">Номер свидетельства о внесении</label>
                                     <input id="certificate-num" name="certificate-num" type="number" class="input"
                                         placeholder="000000000000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="date-entry">Дата внесения</label>
-                                    <input id="date-entry" name="date-entry" type="date" class="input input_date">
+                                    <input id="date-entry" name="date-entry" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                             <div class="input-container">
@@ -217,7 +220,7 @@
                             </div>
                         </div>
                         <div class="manager-data body-form__item">
-                            <div class="body-form__item subtitle subtitle_m24">Данные о руководителе
+                            <div class="body-form__subtitle subtitle subtitle_m24">Данные о руководителе
                                 <a class="question-mark question-mark_titled"
                                     title="Руководитель – это должностное лицо в компании, ответственный за управление и принятие стратегических решений.">
                                     <img src="/icons/mark_question.svg" alt="mark">
@@ -231,25 +234,27 @@
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="manager-tel">Контактный телефон руководителя</label>
-                                    <input id="manager-tel" name="manager-tel" type="tel" class="input" value="+7">
+                                    <input id="manager-tel" name="manager-tel" type="tel" class="input"
+                                        placeholder="+7">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="manager-email">Контактный e-mail руководителя</label>
                                     <input id="manager-email" name="manager-email" type="email" class="input"
                                         placeholder="mail@mtsbank.ru">
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="post">Должность</label>
                                     <input id="post" name="post" type="text" class="input"
                                         placeholder="Укажите занимаемую должность">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="birthday">Дата рождения</label>
-                                    <input id="birthday" name="birthday" type="date" class="input input_date">
+                                    <input id="birthday" name="birthday" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                             <div class="input-container">
@@ -291,19 +296,20 @@
                         <div class="personality body-form__item">
                             <div class="body-form__subtitle subtitle">Документ, удостоверяющий личность</div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-3">
                                     <label for="pasport-series">Серия</label>
                                     <input id="pasport-series" name="pasport-series" type="number" class="input"
                                         placeholder="0000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-3">
                                     <label for="pasport-number">Номер</label>
                                     <input id="pasport-number" name="pasport-number" type="number" class="input"
                                         placeholder="000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-3">
                                     <label for="pasport-entry">Дата выдачи</label>
-                                    <input id="pasport-entry" name="pasport-entry" type="date" class="input input_date">
+                                    <input id="pasport-entry" name="pasport-entry" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                             <div class="input-container">
@@ -317,27 +323,27 @@
                         <div class="migration-card-data body-form__item">
                             <div class="body-form__subtitle subtitle">Данные миграционной карты</div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="migration-card-number">Номер</label>
                                     <input id="migration-card-number" name="migration-card-number" type="number"
                                         class="input" placeholder="000000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="migration-card-series">Серия</label>
                                     <input id="migration-cardseriesr" name="migration-card-series" type="number"
                                         class="input" placeholder="000000000">
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="start-date-card">Дата начала пребывания</label>
-                                    <input id="start-date-card" name="start-date-card" type="date"
-                                        class="input input_date">
+                                    <input id="start-date-card" name="start-date-card" type="text"
+                                        readonly class="input input_date" placeholder="дд.мм.гггг">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="migration-card-series">Дата окончания срока пребывания</label>
-                                    <input id="migration-cardseriesr" name="migration-card-series" type="date"
-                                        class="input input_date">
+                                    <input id="migration-cardseriesr" name="migration-card-series" type="text"
+                                        readonly class="input input_date" placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                         </div>
@@ -345,26 +351,27 @@
                             <div class="body-form__subtitle subtitle">Данные визы/разрешения на временное
                                 пребывание/вида на жительство</div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="visa-number">Номер</label>
                                     <input id="visa-number" name="visa-number" type="number" class="input"
                                         placeholder="000000000">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="visa-series">Серия</label>
                                     <input id="visaseriesr" name="visa-series" type="number" class="input"
                                         placeholder="000000000">
                                 </div>
                             </div>
                             <div class="input-container">
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="start-date-card">Дата начала пребывания</label>
-                                    <input id="start-date-card" name="start-date-card" type="date"
-                                        class="input input_date">
+                                    <input id="start-date-card" name="start-date-card" type="text"
+                                        readonly class="input input_date" placeholder="дд.мм.гггг">
                                 </div>
-                                <div class="input-wrapper">
+                                <div class="input-wrapper input-wrapper-2">
                                     <label for="visa-series">Дата окончания срока пребывания</label>
-                                    <input id="visaseriesr" name="visa-series" type="date" class="input input_date">
+                                    <input id="visaseriesr" name="visa-series" type="text" readonly class="input input_date"
+                                        placeholder="дд.мм.гггг">
                                 </div>
                             </div>
                         </div>
@@ -394,7 +401,10 @@
         </div>
     </div>
 
-    <!-- <script src="js/script.min.js"></!-->
+    <script src="/js/jquery-2.1.1.min.js"></script>
+    <script src="/js/jquery.minical.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/script.min.js"></script>
 </body>
 
 </html>
