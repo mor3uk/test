@@ -1,6 +1,4 @@
 const emptyFieldMessage = 'Обязательное поле';
-const tooShortMessage = 'Минимальная длина поля {0} символов';
-const tooLongMessage = 'Максимальная длина поля {0} символов';
 const incorrectDateMessage = 'Введена некорректная дата';
 
 const generateErrorMessage = (fieldName) => {
@@ -35,12 +33,12 @@ const generateMessagesForDigits = (fieldName) => ({
     digits: generateErrorMessage(fieldName),
     rangelength: generateErrorMessage(fieldName),
     number: generateErrorMessage(fieldName)
-});
+})
 
-const generateMessagesForStrings = () => ({
+const generateMessagesForStrings = (a = 'ов', b = 'ов') => ({
     required: emptyFieldMessage,
-    minlength: tooShortMessage,
-    maxlength: tooLongMessage
+    minlength: `Минимальная длина поля {0} символ${a}`,
+    maxlength: `Максимальная длина поля {0} символ${b}`
 });
 
 const validateObj = {
@@ -87,8 +85,8 @@ const validateObj = {
     messages: {
         ['inn']: generateMessagesForDigits('ИНН'),
         ['ogrn']: generateMessagesForDigits('ИНН'),
-        ['ip-name']: generateMessagesForStrings(),
-        ['bank-name']: generateMessagesForStrings(),
+        ['ip-name']: generateMessagesForStrings('а'),
+        ['bank-name']: generateMessagesForStrings('а'),
         ['bic']: generateMessagesForDigits('БИК банка'),
         ['payment']: generateMessagesForDigits('расчетный счет'),
         ['correspondent']: generateMessagesForDigits('корреспондентский счет'),
