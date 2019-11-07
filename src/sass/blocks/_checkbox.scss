@@ -6,6 +6,10 @@
         top: 0;
         line-height: 28px;
     }
+    a {
+        display: block;
+        pointer-events: none;
+    }
 }
 .label-cbx {
     user-select: none;

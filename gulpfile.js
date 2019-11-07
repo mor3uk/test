@@ -1,12 +1,12 @@
-const gulp         = require('gulp');
-const sass         = require('gulp-sass');
-const rename       = require("gulp-rename");
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS     = require('gulp-clean-css');
-const browserSync  = require('browser-sync');
-const imagemin     = require('gulp-imagemin');
-const htmlmin      = require('gulp-htmlmin');
-const jsmin        = require('gulp-jsmin');
+const cleanCSS = require('gulp-clean-css');
+const browserSync = require('browser-sync');
+const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
+const jsmin = require('gulp-jsmin');
 
 gulp.task('server', function () {
     browserSync.init({
