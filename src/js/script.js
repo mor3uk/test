@@ -10,7 +10,7 @@ $dateFields.minical({
 // Для checkbox
 $('.checkbox a').click(() => false);
 
-// Маска для полей для телефона
+// Маска для полей для телефонa
 $('input[type="tel"]').mask("+7(999) 999-9999");
 
 // Переключение между страницами
@@ -30,8 +30,8 @@ $('.nav__link').click(function (e) {
 
 // Инициализация функции вне для отмены обработчика
 const handleLegalInputChange = ({ target }) => {
-    target.parentNode.parentNode.parentNode
-        .parentNode.querySelector('input[name="real-adress"]')
+    target.closest('.body-form')
+        .querySelector('input[name="real-adress"]')
         .value = target.value;
 };
 
@@ -39,10 +39,10 @@ const handleLegalInputChange = ({ target }) => {
 document.querySelectorAll('input[name="match-legal-adress"]')
     .forEach(($adressCheck) => {
         $adressCheck.addEventListener('change', ({ target }) => {
-            const $realAdressInput = target.parentNode.parentNode
-                .parentNode.parentNode.querySelector('input[name="real-adress"]');
-            const $legalAdressInput = target.parentNode.parentNode
-                .parentNode.parentNode.querySelector('input[name="legal-adress"]');
+            const $realAdressInput = target.closest('.body-form')
+                .querySelector('input[name="real-adress"]');
+            const $legalAdressInput = target.closest('.body-form')
+                .querySelector('input[name="legal-adress"]');
 
             if (target.checked) {
                 $realAdressInput.value = $legalAdressInput.value;
@@ -60,7 +60,7 @@ document.querySelectorAll('input[name="match-legal-adress"]')
 document.querySelectorAll('input[name="licensed"]')
     .forEach(($licenseCheck) => {
         $licenseCheck.addEventListener('change', ({ target }) => {
-            const $licenseBody = target.parentNode.parentNode.parentNode
+            const $licenseBody = target.closest('.body-form')
                 .querySelector('.license__body');
             if (target.checked) {
                 $($licenseBody).slideDown();
@@ -73,9 +73,9 @@ document.querySelectorAll('input[name="licensed"]')
 document.querySelectorAll('input[name="is-perpetual"]')
     .forEach(($perpetualCheck) => {
         $perpetualCheck.addEventListener('change', ({ target }) => {
-            const $validityInput = target.parentNode.parentNode.parentNode
+            const $validityInput = target.closest('.body-form__item')
                 .querySelector('input[name="validity"]');
-            const $freeInput = $validityInput.parentNode.parentNode
+            const $freeInput = $validityInput.closest('.input-container')
                 .querySelector('.input-wrapper');
             if (target.checked) {
                 $validityInput.parentNode.classList.add('input-wrapper-0');
@@ -93,7 +93,7 @@ document.querySelectorAll('input[name="is-perpetual"]')
 document.querySelectorAll('input[name="nationality"]')
     .forEach(($nationCheck) => {
         $nationCheck.addEventListener('change', ({ target }) => {
-            const $selectorsParent = target.parentNode.parentNode.parentNode.parentNode;
+            const $selectorsParent = target.closest('.body-form__item');
             
             const $countySelector = $selectorsParent
                 .querySelector('select[name="nationality-country"]');
