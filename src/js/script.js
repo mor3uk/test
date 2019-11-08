@@ -94,7 +94,7 @@ document.querySelectorAll('input[name="nationality"]')
     .forEach(($nationCheck) => {
         $nationCheck.addEventListener('change', ({ target }) => {
             const $selectorsParent = target.closest('.body-form__item');
-            
+
             const $countySelector = $selectorsParent
                 .querySelector('select[name="nationality-country"]');
             const $visaDataSelector = $selectorsParent
